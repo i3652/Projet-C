@@ -4,6 +4,7 @@
 #include <windows.h>
 #include "Outils.h"
 #include <conio.h>
+
 void Color(int t,int f)
 {
     HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
@@ -52,14 +53,14 @@ void reveil()
     printf( "        [ E ] Je m'appel sans doute chocolat et litchis \n");
     Sleep(2000);
 
-    if ( getch()=='a' ) jeuxpartie1();
-    if ( getch()=='b' ) jeuxpartie1();
-    if ( getch()=='c' ) jeuxpartie1();
-    if ( getch()=='d' ) jeuxpartie1();
-    if ( getch()=='e' ) jeuxpartie1();
+    if ( getch()=='a' ) jeuxpartiel1();
+    if ( getch()=='b' ) jeuxpartiel1();
+    if ( getch()=='c' ) jeuxpartiel1();
+    if ( getch()=='d' ) jeuxpartiel1();
+    if ( getch()=='e' ) jeuxpartiel1();
 }
 
-void jeuxpartie1()
+void jeuxpartiel1()
 {
     system("cls");
     for (int i = 0 ; i < 5 ; i++)
@@ -89,13 +90,13 @@ void jeuxpartie1()
     printf( "        [ D ] Non, Je m'appel sans doute chocolat et litchis \n");
     Sleep(2000);
 
-    if ( getch()=='a' ) jeuxpartie2();
-    if ( getch()=='b' ) jeuxpartie2();
-    if ( getch()=='c' ) jeuxpartie2();
-    if ( getch()=='d' ) jeuxpartie2();
+    if ( getch()=='a' ) jeuxpartiel2();
+    if ( getch()=='b' ) jeuxpartiel2();
+    if ( getch()=='c' ) jeuxpartiel2();
+    if ( getch()=='d' ) jeuxpartiel2();
 }
 
-void jeuxpartie2()
+void jeuxpartiel2()
 {
     system("cls");
     for (int i = 0 ; i < 5 ; i++)
@@ -105,25 +106,77 @@ void jeuxpartie2()
     printf("       - D I E U : \n");
     Sleep(2000);
     printf("\n\n");
-    printf("         Mais oui c'est ce que j'ais dit Mon petit BOB (^-^) \n");
+    printf("         Mais oui c'est ce que j'ais dit Mon petit BOB (^-^), j'adore vraiment ce nom. \n");
     Sleep(2000);
     printf("\n\n");
     printf("         Enfin bref, je me present, je suis Dieu et aujourd'hui tu es mort accidentellement (^x^)* enfin presque...\n");
     Sleep(2000);
-    printf("\n\n\n\n\n");
+    printf("\n\n\n\n");
     printf("        - M O I : \n");
     Sleep(2000);
     printf("\n\n");
-    printf("         Comment ca presque ? Comment suis-je mort alors que j'etais en bonne forme et que j'etais chez moi tranquilement \n");
+    printf("         oui ca j ai remarquer. Et comment ca presque ? Comment suis-je mort alors que j'etais en bonne forme et que j'etais chez moi tranquilement \n");
     Sleep(2000);
-    printf("\n\n\n\n\n");
+    printf("\n\n\n\n");
     printf("       - D I E U : \n");
     Sleep(2000);
     printf("\n\n");
     printf("         il se peut que je me sois trompe en demandants a mes shinigami de t'eliminer \n");
     Sleep(2000);
     printf("\n\n");
-    printf("         Mais oui c'est ce que j'ais dit Mon petit BOB (^-^) \n");
+    printf("         Ducoup pour me faire pardonner je veux bien te reincarner si ton ame est digne de passer mon test, et au cas ou tu poserais la question, NoN je ne peux \n");
+    printf("\n");
+    printf("         pas te redonner la vie car tel est [MON NINDO]. ");
+    Sleep(2000);
+    printf("\n\n\n\n");
+    printf("       - M O I : \n");
+    Sleep(2000);
+    printf("\n\n");
+    Color(11,0);
+    printf("         Saperlipopette bon alors c'est quoi ton test ? ");
+    Sleep(3000);
+    jeuxpartiel3();
+}
+void jeuxpartiel3()
+{
+    system("cls");
+    for (int i = 0 ; i < 5 ; i++)
+    {
+        printf("\n");
+    }
+    printf("       - D I E U : \n");
+    Sleep(2000);
+    printf("\n\n");
+    printf("         OK mon petit BOB(^-^), Pour reussir ce test, tu vas devoir gagner contre un horde de shinobie, de Kirito enrager, et de Titans..  \n");
+    Sleep(2000);
+    printf("\n\n");
+    printf("         Mais je te previen mon PTIT  BOB, si tu ne reussis pas tu iras en Enfer, mais si tu reussi tu te reincarneras en Mec de demon Slayer Riche beau parfais, presque comme moi en gros (^U^) ");
+    printf("\n\n");
+    Sleep(2000);
+    printf( "        [ A ] Non, Je n'abandonne Pas  car je suis comme naruto et que tel est mon nindo \n");
+    printf("\n");
+    Sleep(2000);
+    printf( "        [ B ] Apres tout le paradis est pas si mal \n");
+
+    if ( getch()=='a' ) finEnfer();
+    if ( getch()=='b' ) finReincarnation();
+}
+
+void finEnfer()
+{
+    system("cls");
+    for (int i = 0 ; i < 5 ; i++)
+    {
+        printf("\n");
+    }
+    printf("       - M O I : \n");
+
+}
+
+void finReincarnation()
+{
+    system("cls");
+    Exit();
 }
 
 // Terminer
@@ -201,8 +254,9 @@ void Shop()
     printf("                                                                 _|_|    _|_|_|_|  _|    _|  _|_|_|    \n");
     printf("                                                                     _|  _|    _|  _|    _|  _|        \n");
     printf("                                                               _|_|_|    _|    _|    _|_|    _|        \n");
-    printf("                                                          -----------------------------------------------------\n");
-
+    printf("                                                          -----------------------------------------------------\n\n\n\n");
+    printf("pour un meilleur jeu plus performant voici : un petit liens qui vous laisera nous aidder a nous achetez plus de manga pour avoir plus de ref de manga dans ce jeu : \n");
+    printf(" paypal.me/pools/c/8ni9R4Yyns \n");
 }
 
 void About()
@@ -228,11 +282,8 @@ void About()
     printf(" I L L A   M O H A M E D   A B D A L L A H I    -->   D E V E L O P P E R  .\n");
     printf("\n");
     printf(" L E   V A N   N H A N            M E L V I N   -->   D E V E L O P P E R  .\n");
-    printf("\n");
-    printf(" M O H A M M E D                  A L A O U I   -->   D E V E L O P P E R  .\n");
-    printf("\n");
-    printf(" E L B O U H S S A I N I          W A L I D     -->   D E V E L O P P E R  .\n");
-    system("cls");
+    printf("\n\n\n\n");
+
     if ( getch()=='a' ) disp_menu() ;
 }
 
@@ -252,7 +303,8 @@ void Exit()
     printf("                         _|    _|  _|    _|  _|    _|  _|    _|      _|    _|      _|      _|            _|    _|  _|    _|  _|    _|   \n");
     printf("                           _|_|_|    _|_|      _|_|    _|_|_|        _|_|_|        _|      _|_|_|_|      _|_|_|      _|_|    _|_|_|     \n");
     printf("                       ---------------------------------------------------------------------------------------------------------------- \n");
-    Sleep(3000);
+     printf("      G A M E    O V E R");
+
 }
 
 // Terminer
